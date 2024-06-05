@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LJJ的小站</title>
+    <link rel="icon" type="image/png"
+        href="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/mouseMove.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+
+</head>
+
+<body>
+
+    <div id="sidebar" class="sidebar">
+        <div class="Menu_title">Sidebar Menu</div>
+        <div class="Menu_close_button">
+            <button id="closeBtn" class="close-btn"><i class="fas fa-times-circle"></i></button>
+        </div>
+        <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> 主页</a>
+        <a href="profile.html" class="sidebar-link"><i class="fas fa-user"></i> 个人简介</a>
+        <a href="blog.html" class="sidebar-link"><i class="fas fa-blog"></i> 我的博客</a>
+        <a href="gallery.html" class="sidebar-link"><i class="fas fa-images"></i> 图片库</a>
+        <a href="about.html" class="sidebar-link"><i class="fas fa-info-circle"></i> 关于</a>
+        <a href="sitemap.html" class="sidebar-link"><i class="fas fa-map"></i> 网站导航</a>
+    </div>
+
+    <div class="topnav">
+        <button id="openBtn" class="open-btn"><i class="fas fa-bars"></i></button>
+        <a href="https://www.jnu.edu.cn/main.htm" target="_blank">
+            <img src="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg" alt="暨南大学"
+                style="height: 70px;">
+        </a>
+        <div class="title">个人简介</div>
+        <button id="searchBtn" class="search-btn"><i class="fas fa-search"></i></button>
+        <div id="searchBox" class="search-box">
+            <input type="text" placeholder="搜索..." />
+        </div>
+
+    </div>
+    <button onclick="scrollToTop()" id="topBtn" title="返回顶部"><i class="fas fa-arrow-circle-up"></i> TOP</button>
+
+    <video autoplay muted loop id="bg-video">
+        <source src="https://videos.pexels.com/video-files/19247660/19247660-uhd_3840_2160_60fps.mp4" type="video/mp4">
+        您的浏览器不支持 HTML5 视频。
+    </video>
+    <div>
+        <i class="fas fa-angle-double-down scroll-down-effects"></i>
+    </div>
+
+    <div class="container">
+        <div class="profile">
+            <img src="./img/dog.jpg" alt="Avatar" class="avatar">
+            <h1>Jay</h1>
+            <p>道可道，非常道</p>
+            <p>名可名，非常名</p>
+        </div>
+        <div class="social-icons">
+
+            <a href="https://qq.com" target="_blank"><i class="fab fa-qq"></i></a>
+            <a href="https://weixin.com" target="_blank"><i class="fab fa-weixin"></i></a>
+            <a href="https://weibo.com" target="_blank"><i class="fab fa-weibo"></i></a>
+            <a href="https://zhihu.com" target="_blank"><i class="fab fa-zhihu"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="chapter">
+            <div class="chapter-title"><i class="fas fa-user"></i> <p>基本信息</p></div>
+            <div class="comment"><p>天生我材必有用</p></div>
+            <div class="chapter-section">
+                <p><strong>学历：</strong>本科</p>
+                <p><strong>职业(意向)：</strong>软件工程师</p>
+                <p><strong>邮箱：</strong>1030341806@qq.com</p>
+                <p><strong>个人简介：</strong>热爱编程和技术，擅长开发，喜欢探索新技术并应用于实际项目。</p>
+            </div>
+        </div>
+    
+        <div class="chapter">
+            <div class="chapter-title"><i class="fas fa-graduation-cap"></i> <p>校园经历</p></div>
+            <div class="comment"><p>凡是过去，皆为序章。</p></div>
+            <div class="chapter-section">
+                <p><strong>教育经历：</strong>本科 暨南大学</p>
+                <p><strong>时间：</strong>2021.09-2025.06 </p>
+                <p><strong>专业：</strong>计算机系 软件工程</p>
+                <p><strong>学习成绩：</strong>学习成绩排名全系TOP5%，GPA为4.03，获得过两次校级优秀学生二等奖奖学金。</p>
+                <p><strong>专业知识学习：</strong>在校期间，通过系统学习，我培养了良好的科学素养，较为全面地掌握了数据结构与算法、计算机网络以及计算机科学与技术等方面的基本理论、知识和技能。特别地，在计算机软件与应用领域，我掌握了基本的技术方法，并能够运用这些知识解决实际问题。</p>
+                <p><strong>校内活动：</strong>在校期间，积极参与校内活动，如志愿者活动，引路学长，学霸笔记等，性格阳光开朗积极乐观</p>
+
+            </div>
+        </div>
+    
+        <div class="chapter">
+            <div class="chapter-title"><i class="fas fa-project-diagram"></i> <p>项目经历</p></div>
+            <div class="comment"><p>不积跬步，无以至千里；不积小流，无以成江海</p></div>
+            <div class="chapter-section">
+                <p><strong>1、“蜃霭”-基于深度和宽度学习的大气污染预测可视化网络平台：</strong>这个项目作为作品参加了2023年广东省大学生计算机创新作品赛获得省赛二等奖，主要负责前端开发和项目部署，主要使用了vue+spring boot。</p>
+                <p><strong>2、基于k8s的简单算网：</strong>主要是搭建算网，由算力接入、算网感知、算网编排和算网调度等模块构成。主要负责算力感知，使用Prometheus实现k8s集群的服务监控，再由Grafana进行可视化，通过Prometheus + Grafana 构建强大的监控和数据可视化系统。 </p>
+
+            </div>
+        </div>
+    
+        <div class="chapter">
+            <div class="chapter-title"><i class="fas fa-trophy"></i> <p>证书奖项</p></div>
+            <div class="comment"><p>凡心所向，素履所往，生如逆旅，一苇以航。</p></div>
+            <div class="chapter-section">
+                <p>英语<strong>四级</strong>证书、英语<strong>六级</strong>证书</p>
+                <p>2021-2022、2022-2023学年获得校级<strong>优秀学生</strong>二等奖奖学金</p>
+                <p>2023年6月参加<strong>广东省大学生计算机创新作品赛</strong>，海峡两岸暨港澳地区大学生计算机创新作品赛广东省赛(本科组)，获省赛团体一等奖</p>
+                <p>2023年10月获得2023<strong>全国大学生软件测试大赛</strong>广东省决赛<strong>二等奖</strong></p>
+                
+
+            </div>
+        </div>
+    
+        <div class="chapter">
+            <div class="chapter-title"><i class="fas fa-tools"></i> <p>个人技能</p></div>
+            <div class="comment"><p>闻道有先后，术业有专攻</p></div>
+            <div class="chapter-section">
+                <p>熟练掌握<strong>C++、Java、Python</strong>等主流编程语言，能够进行程序设计和开发，解决实际问题。熟悉<strong>HTML、CSS和JavaScript</strong>，能够进行Web前端开发，创建交互式用户界面，了解<strong>Vue.js</strong>框架。熟悉<strong>Spring Boot框架和MyBatis框架</strong>，能够快速搭建后端服务，实现业务逻辑和数据处理。了解<strong>Go</strong>语言，具备一定的编程能力和开发经验。接触过<strong>k8s</strong>等云原生相关内容</p>
+                
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title"><i class="fas fa-lightbulb"></i> 自我评价</div>
+            <div class="comment"><p>知人者智，自知者明。</p></div>
+            <div class="chapter-section">
+                <p><strong>1、</strong>本人逻辑思维强，有良好的编程习惯，能够编写规范、易于维护、性能高效的代码。</p>
+                <p><strong>2、</strong>工作积极主动、敬业，有强烈的责任心，良好的沟通能力和团队协作精神，未来的工作，我将为我的事业继续拼搏和奋斗，不断学习和提升自己。</p>
+                <p><strong>3、</strong>我有良好的学习能力和适应能力，始终愿意接受新的知识和技能，并付诸实践以不断提升自我。</p>
+                <p><strong>4、</strong>我具有乐观、开朗的个性，能够在压力下保持积极心态，并与团队成员建立良好的合作关系。</p>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 LJJ 的小站. 版权所有。</p>
+    </footer>
+
+
+    <script src="./js/mouseClick.js"></script>
+    <script src="./js/sakura.js"></script>
+
+
+</body>
+
+</html>

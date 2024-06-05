@@ -1,0 +1,191 @@
+.container {
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 15%;
+}
+
+.profile .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid white;
+}
+
+.profile .avatar:hover {
+    transform: scale(1.2);
+}
+
+.profile h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.profile p{
+    font-style: italic;
+    font-size: large;
+    /* GreenYellow for comment text */
+    background: linear-gradient(45deg, #42E695, #3BB2B8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2em;
+    margin: 0 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #00eeff;
+}
+
+
+/* Main content styling */
+.main {
+
+    width: 90%;
+    /* 增加页面边距 */
+    margin: 40px auto;
+    /* 上下的外边距增加 */
+    padding: 30px;
+    /* 增加内边距 */
+    backdrop-filter: blur(15px);
+    /* 增加模糊效果 */
+    border-radius: 15px;
+    /* 更大的圆角 */
+    background: rgba(0, 0, 0, 0.6);
+    /* 调整背景透明度 */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* 增加阴影 */
+}
+
+.main:hover {
+    /* transform: scale(1.02); */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.chapter {
+    margin-bottom: 30px;
+    /* 每个章节之间更多的间距 */
+}
+
+.chapter-title {
+    font-size: 2.5em;
+    /* 更大的字体 */
+    margin-bottom: 20px;
+    /* 标题与内容之间更多的间距 */
+
+    display: flex;
+    /* 使用flexbox布局 */
+    align-items: center;
+    /* 垂直居中图标 */
+
+    background: linear-gradient(45deg, #FF6B6B, #3BB2B8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    border-bottom: 2px solid #FFD700;
+    /* Gold border */
+    padding-bottom: 5px;
+
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+
+.chapter-title:hover {
+    color: #3BB2B8;
+    
+}
+
+.chapter-title i {
+    margin-right: 10px;
+    /* 图标和文本之间的间距 */
+
+}
+
+.chapter-section {
+    font-size: 1.3em;
+    /* 更大的字体 */
+    line-height: 1.6;
+    /* 增加行高以提高可读性 */
+    background: rgba(255, 255, 255, 0.1);
+    /* 内容部分的背景色调整 */
+    padding: 20px;
+    /* 内容部分的内边距 */
+    border-radius: 10px;
+    /* 内容部分的圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+
+.chapter-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.chapter-section p {
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #ffffff, #51c488);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.chapter-section p strong {
+    background: linear-gradient(45deg, #FF6B6B, #FFD93D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.comment {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #ADFF2F;
+    /* GreenYellow for comment text */
+    background: linear-gradient(45deg, #42E695, #3BB2B8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.comment:hover {
+    font-size: 25px;
+}
+
+/* Icons for different titles */
+.chapter-title i {
+    color: #FFD700;
+    /* Gold color for icons */
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="icon" type="image/png"
+        href="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/mouseMove.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+
+</head>
+
+<body>
+
+    <div id="sidebar" class="sidebar">
+        <div class="Menu_title">Sidebar Menu</div>
+        <div class="Menu_close_button">
+            <button id="closeBtn" class="close-btn"><i class="fas fa-times-circle"></i></button>
+        </div>
+        <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> 主页</a>
+        <a href="profile.html" class="sidebar-link"><i class="fas fa-user"></i> 个人简介</a>
+        <a href="blog.html" class="sidebar-link"><i class="fas fa-blog"></i> 我的博客</a>
+        <a href="gallery.html" class="sidebar-link"><i class="fas fa-images"></i> 图片库</a>
+        <a href="about.html" class="sidebar-link"><i class="fas fa-info-circle"></i> 关于</a>
+        <a href="sitemap.html" class="sidebar-link"><i class="fas fa-map"></i> 网站导航</a>
+    </div>
+
+    <div class="topnav">
+        <button id="openBtn" class="open-btn"><i class="fas fa-bars"></i></button>
+        <a href="https://www.jnu.edu.cn/main.htm" target="_blank">
+            <img src="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg" alt="暨南大学"
+                style="height: 70px;">
+        </a>
+        <div class="title">LJJ 的小站</div>
+        <button id="searchBtn" class="search-btn"><i class="fas fa-search"></i></button>
+        <div id="searchBox" class="search-box">
+            <input type="text" placeholder="搜索..." />
+        </div>
+
+    </div>
+    <button onclick="scrollToTop()" id="topBtn" title="返回顶部"><i class="fas fa-arrow-circle-up"></i> TOP</button>
+
+    <video autoplay muted loop id="bg-video">
+        <source src="./img/20233744-hd_1280_720_30fps.mp4" type="video/mp4">
+        您的浏览器不支持 HTML5 视频。
+    </video>
+    <div id="login_box">
+        <h2 class="login_text">登录</h2>
+        <div id="input_box">
+            <input type="text" placeholder="请输入用户名">
+        </div>
+        <div class="input_box">
+            <input type="password" placeholder="请输入密码">
+        </div>
+        <button class="login_btn" onclick="location.href='./index.html'">登录</button><br>
+    </div>
+
+
+
+
+    <footer>
+        <p>&copy; 2024 LJJ 的小站. 版权所有。</p>
+    </footer>
+
+    <script src="./js/mouseClick.js"></script>
+    <script src="./js/sakura.js"></script>
+
+
+
+</body>
+
+</html>

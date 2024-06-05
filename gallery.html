@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LJJ的小站</title>
+    <link rel="icon" type="image/png"
+        href="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/mouseMove.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar">
+        <div class="Menu_title">Sidebar Menu</div>
+        <div class="Menu_close_button">
+            <button id="closeBtn" class="close-btn"><i class="fas fa-times-circle"></i></button>
+        </div>
+        <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> 主页</a>
+        <a href="profile.html" class="sidebar-link"><i class="fas fa-user"></i> 个人简介</a>
+        <a href="blog.html" class="sidebar-link"><i class="fas fa-blog"></i> 我的博客</a>
+        <a href="gallery.html" class="sidebar-link"><i class="fas fa-images"></i> 图片库</a>
+        <a href="about.html" class="sidebar-link"><i class="fas fa-info-circle"></i> 关于</a>
+        <a href="sitemap.html" class="sidebar-link"><i class="fas fa-map"></i> 网站导航</a>
+    </div>
+
+    <div class="topnav">
+        <button id="openBtn" class="open-btn"><i class="fas fa-bars"></i></button>
+        <a href="https://www.jnu.edu.cn/main.htm" target="_blank">
+            <img src="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg" alt="暨南大学"
+                style="height: 70px;">
+        </a>
+        <div class="title">图片库</div>
+        <button id="searchBtn" class="search-btn"><i class="fas fa-search"></i></button>
+        <div id="searchBox" class="search-box">
+            <input type="text" placeholder="搜索..." />
+        </div>
+
+    </div>
+    <button onclick="scrollToTop()" id="topBtn" title="返回顶部"><i class="fas fa-arrow-circle-up"></i> TOP</button>
+
+    <video autoplay muted loop id="bg-video">
+        <source src="./img/1409899-hd_1280_720_25fps.mp4" type="video/mp4">
+        您的浏览器不支持 HTML5 视频。
+    </video>
+
+    <div>
+        <i class="fas fa-angle-double-down scroll-down-effects"></i>
+    </div>
+
+    <div class="container">
+        <div class="profile">
+            <img src="./img/dog.jpg" alt="Avatar" class="avatar">
+            <h1>Jay</h1>
+            <p>
+                最是人间留不住，
+                <br>
+                朱颜辞镜花辞树。
+            </p>
+
+        </div>
+        <div class="social-icons">
+
+            <a href="https://qq.com" target="_blank"><i class="fab fa-qq"></i></a>
+            <a href="https://weixin.com" target="_blank"><i class="fab fa-weixin"></i></a>
+            <a href="https://weibo.com" target="_blank"><i class="fab fa-weibo"></i></a>
+            <a href="https://zhihu.com" target="_blank"><i class="fab fa-zhihu"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="gallery-title">
+            <p>网页素材图片</p>
+        </div>
+        <div class="gallery">
+            <div class="img" style="background-image: url('./img/avenue-815297_1280.jpg');"></div>
+            <div class="img" style="background-image: url('./img/pexels-creationsbyfaik-1025469.jpg');"></div>
+            <div class="img" style="background-image: url('./img/pexels-googledeepmind-17485657.jpg');"></div>
+            <div class="img" style="background-image: url('./img/pexels-magda-ehlers-pexels-1329295.jpg');"></div>
+            <div class="img" style="background-image: url('./img/pexels-pandepoul-6590186.jpg');"></div>
+            <div class="img" style="background-image: url('./img/pexels-pixabay-206359.jpg');"></div>
+            <div class="img" style="background-image: url('./img/pexels-pixabay-33545.jpg');"></div>
+
+        </div>
+    </div>
+    
+
+
+    <footer>
+        <p>&copy; 2024 LJJ 的小站. 版权所有。</p>
+    </footer>
+    <script src="./js/mouseClick.js"></script>
+    <script src="./js/sakura.js"></script>
+</body>
+
+</html>

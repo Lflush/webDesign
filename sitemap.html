@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LJJ 的小站</title>
+    <link rel="icon" type="image/png"
+        href="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/sitemap.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/mouseMove.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar">
+        <div class="Menu_title">Sidebar Menu</div>
+        <div class="Menu_close_button">
+            <button id="closeBtn" class="close-btn"><i class="fas fa-times-circle"></i></button>
+        </div>
+        <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> 主页</a>
+        <a href="profile.html" class="sidebar-link"><i class="fas fa-user"></i> 个人简介</a>
+        <a href="blog.html" class="sidebar-link"><i class="fas fa-blog"></i> 我的博客</a>
+        <a href="gallery.html" class="sidebar-link"><i class="fas fa-images"></i> 图片库</a>
+        <a href="about.html" class="sidebar-link"><i class="fas fa-info-circle"></i> 关于</a>
+        <a href="sitemap.html" class="sidebar-link"><i class="fas fa-map"></i> 网站导航</a>
+    </div>
+
+    <div class="topnav">
+        <button id="openBtn" class="open-btn"><i class="fas fa-bars"></i></button>
+        <a href="https://www.jnu.edu.cn/main.htm" target="_blank">
+            <img src="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg" alt="暨南大学"
+                style="height: 70px;">
+        </a>
+        <div class="title">网页导航（友情链接）</div>
+        <button id="searchBtn" class="search-btn"><i class="fas fa-search"></i></button>
+        <div id="searchBox" class="search-box">
+            <input type="text" placeholder="搜索..." />
+        </div>
+
+    </div>
+    <button onclick="scrollToTop()" id="topBtn" title="返回顶部"><i class="fas fa-arrow-circle-up"></i> TOP</button>
+
+    <video autoplay muted loop id="bg-video">
+        <source src="./img/20184664-hd_1280_720_30fps.mp4" type="video/mp4">
+        您的浏览器不支持 HTML5 视频。
+    </video>
+
+    <!-- 友情链接部分 -->
+
+    <div class="friend-links">
+        <div class="link-category">
+            <div class="link-box">
+                <h2 class="catagory-title">技术网站类</h2>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.cnblogs.com/" target="_blank">博客园</a></div>
+                <div class="link-description">一个面向开发者的知识分享社区，聚集许多优秀的开发者，分享知识、信息以及技术讨论。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.csdn.net/" target="_blank">CSDN</a></div>
+                <div class="link-description">这个不用多说吧，中文最大的技术社区，全球知名中文IT技术交流平台，超多大神在这里！</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.oschina.net/" target="_blank">开源中国</a></div>
+                <div class="link-description">目前国内最大的开源技术社区，资源、咨询、技术问答以及资源等等。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="http://books.studygolang.com/" target="_blank">Golang中文社区</a></div>
+                <div class="link-description">Go语言爱好者的学习家园，分享Go 语言知识、交流使用经验等</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://juejin.cn/" target="_blank">掘金</a></div>
+                <div class="link-description">面向全球中文开发者的技术内容分享与交流平台，了解行业咨询、同行故事、开发资源，蛮有意思的，我平常把它当贴吧看。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></div>
+                <div class="link-description">freeCodeCamp 是一个社区驱动的学习平台，提供免费的编程课程和项目。</div>
+            </div>
+        </div>
+
+        <div class="link-category">
+            <div class="link-box">
+                <h2 class="catagory-title">私活平台类</h2>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.proginn.com/" target="_blank">程序员客栈</a></div>
+                <div class="link-description">
+                    我不允许还有人不知道！它算是国内数一数二好用的自由工作平台，为中高端程序员、产品经理和设计师等等互联网相关人员提供稳定的线上工作机会，包括自由工作、远程工作和兼职工作，身边很多人都用过。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.devnors.org/" target="_blank">Devonrs</a></div>
+                <div class="link-description">国外的一个互联网软件定制开发与软件外包开发服务平台，比较有意思的是平台用的是区块链技术支付，想了解国际市场的朋友可以看看。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://zb.oschina.net/" target="_blank">开源众包</a></div>
+                <div class="link-description">专业的软件众包平台。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.mayigeek.com/" target="_blank">码易众包</a></div>
+                <div class="link-description">一站式软件外包平台。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.upwork.com/" target="_blank">Upwork</a></div>
+                <div class="link-description">
+                    全球数一数二的自由职业市场，该平台也为多种不同行业提供服务，不仅限于软件外包，有和微软、Airbnb等知名企业合作过。想体验国外自由职业的朋友可以看看。</div>
+            </div>
+        </div>
+
+        <div class="link-category">
+            <div class="link-box">
+                <h2 class="catagory-title">面试刷题类</h2>
+            </div>
+            
+            <div class="link-box">
+                <div class="link-title"><a href="https://leetcode.cn/" target="_blank">力扣Leecode</a></div>
+                <div class="link-description">这个也不用多介绍吧，新手到老鸟通用的网站，题型多题目多且经典，国内绝对是头部的刷题软件。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.nowcoder.com/" target="_blank">牛客网</a></div>
+                <div class="link-description">集笔面试系统、题库、课程教育、社群交流、招聘内推于一体。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="http://poj.org/" target="_blank">北京大学POJ</a></div>
+                <div class="link-description">中国最受欢迎OJ之一，各式各样各种难度的题目都有。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="http://xuesql.cn/" target="_blank">自学SQL网</a></div>
+                <div class="link-description">一个能够在线练习SQL的网址，由浅入深。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.acmcoder.com/#/practice/company" target="_blank">赛码</a></div>
+                <div class="link-description">互联网名企笔试真题库。</div>
+            </div>
+        </div>
+
+        <div class="link-category">
+            <div class="link-box">
+                <h2 class="catagory-title">学习网站类</h2>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.runoob.com/" target="_blank">菜鸟教程</a></div>
+                <div class="link-description">提供了最全的web技术基础教程，以及HTML教程、CSS教程、Javascript教程、Python基础教程，PHP教程等。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.imooc.com/" target="_blank">慕课网</a></div>
+                <div class="link-description">编程技能学习平台，涉及JAVA、前端、Python、大数据等60类主流技术语言。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.w3school.com.cn/" target="_blank">W3school</a></div>
+                <div class="link-description">涵盖从从基础的HTML到CSS，乃至进阶的XML、SQL、JS、PHP和http://ASP.NET。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://gitbook.cn/" target="_blank">Gitchat</a></div>
+                <div class="link-description">中国领先的开发者技术社区，以技术问答、技术专栏、技术课程、技术资讯为核心。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://www.coursera.org/" target="_blank">coursera</a></div>
+                <div class="link-description">大型公开在线课程项目，由美国斯坦福大学两名计算机科学教授创办，在线提供网络公开课程。</div>
+            </div>
+            <div class="link-box">
+                <div class="link-title"><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></div>
+                <div class="link-description">MDN Web Docs 提供全面的 web 开发教程和文档。</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 LJJ 的小站. 版权所有。</p>
+    </footer>
+
+    <script src="./js/mouseClick.js"></script>
+    <script src="./js/sakura.js"></script>
+
+</body>
+
+</html>

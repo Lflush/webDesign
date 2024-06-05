@@ -1,0 +1,154 @@
+/* Reset some basic styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    height: 80vh;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 10%;
+}
+
+.profile .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border: 5px solid white;
+}
+
+.profile .avatar:hover {
+    transform: scale(1.2);
+}
+
+.profile h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.profile p {
+    font-style: italic;
+    font-size: large;
+    /* GreenYellow for comment text */
+    background: linear-gradient(45deg, #42E695, #3BB2B8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 3em;
+    margin: 0 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #00eeff;
+}
+
+.introduce {
+    background: -webkit-linear-gradient(left, #C5FFA150, #69F6B750);
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.introduce:hover {
+    background: -webkit-linear-gradient(left, #69F6B750, #69f6ed50);
+    color: lightsalmon;
+    backdrop-filter: blur(20px);
+}
+
+.introduce-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.introduce-text {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+
+
+.main {
+    
+    margin: 50px auto;
+    padding: 5% 20%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-title {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.about-title:hover {
+    color: #2980b9;
+    border-color: #2980b9;
+}
+
+.about-content {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #7f8c8d;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    text-align: justify;
+    transition: color 0.3s ease;
+}
+
+.about-content p:hover {
+    color: #2c3e50;
+}
+
+.about-content a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-content a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}

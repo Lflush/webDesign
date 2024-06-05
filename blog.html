@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LJJ的小站</title>
+    <link rel="icon" type="image/png"
+        href="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/blog.js"></script>
+</head>
+
+<body>
+
+    <div id="sidebar" class="sidebar">
+        <div class="Menu_title">Sidebar Menu</div>
+        <div class="Menu_close_button">
+            <button id="closeBtn" class="close-btn"><i class="fas fa-times-circle"></i></button>
+        </div>
+        <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> 主页</a>
+        <a href="profile.html" class="sidebar-link"><i class="fas fa-user"></i> 个人简介</a>
+        <a href="blog.html" class="sidebar-link"><i class="fas fa-blog"></i> 我的博客</a>
+        <a href="gallery.html" class="sidebar-link"><i class="fas fa-images"></i> 图片库</a>
+        <a href="about.html" class="sidebar-link"><i class="fas fa-info-circle"></i> 关于</a>
+        <a href="sitemap.html" class="sidebar-link"><i class="fas fa-map"></i> 网站导航</a>
+    </div>
+
+    <div class="topnav">
+        <button id="openBtn" class="open-btn"><i class="fas fa-bars"></i></button>
+        <a href="https://www.jnu.edu.cn/main.htm" target="_blank">
+            <img src="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg" alt="暨南大学"
+                style="height: 70px;">
+        </a>
+        <div class="title">我的博客</div>
+        <button id="searchBtn" class="search-btn"><i class="fas fa-search"></i></button>
+        <div id="searchBox" class="search-box">
+            <input type="text" placeholder="搜索..." />
+        </div>
+
+    </div>
+    <button onclick="scrollToTop()" id="topBtn" title="返回顶部"><i class="fas fa-arrow-circle-up"></i> TOP</button>
+
+    <video autoplay muted loop id="bg-video">
+        <source src="./img/15462525-hd_1280_720_30fps.mp4" type="video/mp4">
+        您的浏览器不支持 HTML5 视频。
+    </video>
+
+    <div class="container">
+        <div class="profile">
+            <img src="./img/dog.jpg" alt="Avatar" class="avatar">
+            <h1>Jay</h1>
+            <p>
+                人生如逆旅，
+                <br>
+                我亦是行人。
+            </p>
+
+        </div>
+        <div class="social-icons">
+
+            <a href="https://qq.com" target="_blank"><i class="fab fa-qq"></i></a>
+            <a href="https://weixin.com" target="_blank"><i class="fab fa-weixin"></i></a>
+            <a href="https://weibo.com" target="_blank"><i class="fab fa-weibo"></i></a>
+            <a href="https://zhihu.com" target="_blank"><i class="fab fa-zhihu"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="introduce">
+            <p class="introduce-title">人生一世，草木一春，来如风雨，去似微尘。</p>
+            <hr>
+            <p class="introduce-text">一切都非常简单</p>
+            <p class="introduce-text">写下你想写的</p>
+            <p class="introduce-text">然后在心情条上</p>
+            <p class="introduce-text">划出你的喜怒哀乐</p>
+            <p class="introduce-text">记录下你的今天吧</p>
+            <p class="introduce-text">那些让你喜笑颜开的</p>
+            <p class="introduce-text">那些让你眉头紧皱的</p>
+            <p class="introduce-text">拥有 My Wonderful Days的一天</p>
+        </div>
+        <div class="blog">
+            <div class="blog-box">
+                <div class="blog-title">
+                    <p>最多约数问题</p>
+                </div>
+                <div class="blog-cover">
+                    <img src="./img/pexels-magda-ehlers-pexels-1329295.jpg" alt="最多约数问题">
+                </div>
+                <div class="blog-information">
+                    <p>时间：2024-02-26 上午</p>
+                    <p>标签：算法设计与分析,C++,Java</p>
+                </div>
+                <div class="blog-description">
+                    <p>
+                        问题描述：正整数x的约数是能整除x的正整数。正整数x 的约数个数记为div(x)。例如，1，2，5，10 都是正整数10 的约数，且div(10)=4。设a 和b 是2
+                        个正整数，a≤b，找出a和b之间约数个数最多的数x及其最多约数个数。
+                    </p>
+                    <p>
+                        主要思路：将输入的数据a和b，用循环遍历a到b的所有整数，用div()函数求每一个数的约数个数求出之后与m比较，将较大的赋值给m，最后输出m。
+                        div(x)函数返回值为int类型，传入整型参数int a，s赋值为a的根号2，用一个循环求
+                        a的约数个数，a对i=1到s取余，能取余为0，则n=n+2，（因为有一个比a的根号小的约数就有一个比a大的约数），循环之后，如果s的平方等于a，说明多算了一个约数，所以n=n-1，最后返回n
+
+                    </p>
+                </div>
+            </div>
+            <div class="blog-box">
+                <div class="blog-title">
+                    <p>
+                        完全背包问题
+                    </p>
+                </div>
+                <div class="blog-cover">
+                    <img src="./img/pexels-googledeepmind-17485657.jpg" alt="完全背包问题">
+                </div>
+                <div class="blog-information">
+                    <p>时间：2024-03-26 上午</p>
+                    <p>标签：算法设计与分析,C++,Java</p>
+                </div>
+                <div class="blog-description">
+                    <p>
+                        输入数组元素个数n和容量m，数组v和w,用一个二维数组dp[i][j]，dp[i][j]代表可选择前i个元素背包容量为j的最优解，d[i][j]分两种情况，如果第i个元素重量w[i]大于当前的j，则不可能装下第i个物品，d[i][j]等于d[i-1][j]，如果第i个元素重量w[i]小于等于当前的j，则有可能装下第i个物品，但要考虑装下是不是最优解，不装下的最优解为dp[i-1][j]即可选择前i-1个元素背包容量为j的最优解，装下的最优解为dp[i][j-w[i]]+v[i]即可选择前i个元素背包容量为j减去第i物品的w[i]重量的最优解加上第i物品的价值v[i]，比较这两个值取最大的为dp[i][j]。然后从dp[i][j]数组状态中回溯，如果dp[i][j]
+                        == dp[i][j - w[i]] + v[i]则代表选择了一次第i物品，num[i]记录，num[i]++,j减去w[i]继续判断当前d[i][j]的选择，直到dp[i][j] !=
+                        dp[i][j - w[i]] + v[i]表示不再选择第i物品了，直接break出一层循环，将i--，再对dp[i][j]进行判断。最后num[i]数组中即为第i物品的选择次数。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="blogModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="">
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <div>
+        <i class="fas fa-angle-double-down scroll-down-effects"></i>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LJJ 的小站. 版权所有。</p>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
