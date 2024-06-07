@@ -7,10 +7,10 @@
     <link rel="icon" type="image/png"
         href="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./css/universal.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <script src="./js/index.js"></script>
-    <script src="./js/mouseMove.js"></script>
+    <link rel="stylesheet" href="../css/universal.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <script src="../js/index.js"></script>
+    <script src="../js/mouseMove.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
@@ -40,7 +40,7 @@
             <img src="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg" alt="暨南大学"
                 style="height: 70px;">
         </a>
-        <div class="title">关于</div>
+        <div class="title">图片库</div>
         <button id="searchBtn" class="search-btn"><i class="fas fa-search"></i></button>
         <div id="searchBox" class="search-box">
             <input type="text" placeholder="搜索..." />
@@ -50,7 +50,7 @@
     <button onclick="scrollToTop()" id="topBtn" title="返回顶部"><i class="fas fa-arrow-circle-up"></i> TOP</button>
 
     <video autoplay muted loop id="bg-video">
-        <source src="./img/1409899-hd_1280_720_25fps.mp4" type="video/mp4">
+        <source src="../img/1409899-hd_1280_720_25fps.mp4" type="video/mp4">
         您的浏览器不支持 HTML5 视频。
     </video>
 
@@ -60,10 +60,12 @@
 
     <div class="container">
         <div class="profile">
-            <img src="./img/dog.jpg" alt="Avatar" class="avatar">
+            <img src="../img/dog.jpg" alt="Avatar" class="avatar">
             <h1>Jay</h1>
             <p>
-                世事一场大梦，人生几度秋凉？
+                最是人间留不住，
+                <br>
+                朱颜辞镜花辞树。
             </p>
 
         </div>
@@ -81,17 +83,20 @@
         </div>
     </div>
 
-    <div>
-        <i class="fas fa-angle-double-down scroll-down-effects"></i>
-    </div>
 
     <div class="main">
-        <div class="about">
-            <div class="about-title">网站简介</div>
-            <div class="about-content">
-                <p>这个网站主要是使用html+css+js前端三件套做成，没有配套的后端，也没有使用vue等框架搭建，只是个纯前端的静态网页架子。这个网页主要是个人的博客，记录生活，写一些技术博客，日常生活日常学习的记录等等。</p>
-                <p>后续也是想将这个网站真正完善好，将这个网站先使用vue改写实现，然后写个配套的springboot后端代码，让这个网站真正跑起来，后续会也顺便对界面做些优化和改造之类。</p>
-            </div>
+        <div class="gallery-title">
+            <p>网页素材图片</p>
+        </div>
+        <div class="gallery">
+            <div class="img" style="background-image: url('../img/avenue-815297_1280.jpg');"></div>
+            <div class="img" style="background-image: url('../img/pexels-creationsbyfaik-1025469.jpg');"></div>
+            <div class="img" style="background-image: url('../img/pexels-googledeepmind-17485657.jpg');"></div>
+            <div class="img" style="background-image: url('../img/pexels-magda-ehlers-pexels-1329295.jpg');"></div>
+            <div class="img" style="background-image: url('../img/pexels-pandepoul-6590186.jpg');"></div>
+            <div class="img" style="background-image: url('../img/pexels-pixabay-206359.jpg');"></div>
+            <div class="img" style="background-image: url('../img/pexels-pixabay-33545.jpg');"></div>
+
         </div>
     </div>
     
@@ -100,8 +105,8 @@
     <footer>
         <p>&copy; 2024 LJJ 的小站. 版权所有。</p>
     </footer>
-    <script src="./js/mouseClick.js"></script>
-    <script src="./js/sakura.js"></script>
+    <script src="../js/mouseClick.js"></script>
+    <script src="../js/sakura.js"></script>
 </body>
 
 </html>

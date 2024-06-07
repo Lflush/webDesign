@@ -7,16 +7,17 @@
     <link rel="icon" type="image/png"
         href="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/index.js"></script>
-    <script src="./js/mouseMove.js"></script>
+    <link rel="stylesheet" href="../css/universal.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="../js/index.js"></script>
+    <script src="../js/mouseMove.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
-    
-    
+
+
 </head>
 
 <body>
@@ -39,7 +40,7 @@
             <img src="https://www.jnu.edu.cn/_upload/tpl/00/f5/245/template245/images/home/logo2.svg" alt="暨南大学"
                 style="height: 70px;">
         </a>
-        <div class="title">LJJ 的小站</div>
+        <div class="title">关于</div>
         <button id="searchBtn" class="search-btn"><i class="fas fa-search"></i></button>
         <div id="searchBox" class="search-box">
             <input type="text" placeholder="搜索..." />
@@ -49,37 +50,25 @@
     <button onclick="scrollToTop()" id="topBtn" title="返回顶部"><i class="fas fa-arrow-circle-up"></i> TOP</button>
 
     <video autoplay muted loop id="bg-video">
-        <source src="./img/1409899-hd_1280_720_25fps.mp4" type="video/mp4">
+        <source src="../img/1409899-hd_1280_720_25fps.mp4" type="video/mp4">
         您的浏览器不支持 HTML5 视频。
     </video>
 
-
-    <div class="welcome-section">
-        <h1>Welcome to a world of endless possibilities and boundless creativity.
-            Step into a realm where dreams meet reality, and inspiration knows no bounds.
-            Embark on a journey through the canvas of imagination and innovation.
-        </h1>
-    </div>
     <div>
         <i class="fas fa-angle-double-down scroll-down-effects"></i>
-    </div>
-    <div class="hello">
-        人生一世，草木一春，
-        <br>
-        来如风雨，去似微尘。
     </div>
 
     <div class="container">
         <div class="profile">
-            <img src="./img/dog.jpg" alt="Avatar" class="avatar">
+            <img src="../img/dog.jpg" alt="Avatar" class="avatar">
             <h1>Jay</h1>
             <p>
-                不忘初心，方得始终。
+                世事一场大梦，人生几度秋凉？
             </p>
-            
+
         </div>
         <div class="social-icons">
-            
+
             <a href="https://qq.com" target="_blank"><i class="fab fa-qq"></i></a>
             <a href="https://weixin.com" target="_blank"><i class="fab fa-weixin"></i></a>
             <a href="https://weibo.com" target="_blank"><i class="fab fa-weibo"></i></a>
@@ -91,66 +80,28 @@
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
-    
-    <div class="introduce">
-        <p class="introduce-title">心愿便利贴</p>
-        <hr>
-        <p class="introduce-text">一切都非常简单</p>
 
-        <p class="introduce-text">写下你想写的</p>
+    <div>
+        <i class="fas fa-angle-double-down scroll-down-effects"></i>
+    </div>
 
-        <p class="introduce-text">然后在心情条上</p>
-
-        <p class="introduce-text">划出你的喜怒哀乐</p>
-        <p class="introduce-text">记录下你的今天吧</p>
-
-        <p class="introduce-text">那些让你喜笑颜开的</p>
-
-        <p class="introduce-text">那些让你眉头紧皱的</p>
-
-        <p class="introduce-text">拥有 My Wonderful Days的一天</p>
-
-
+    <div class="main">
+        <div class="about">
+            <div class="about-title">网站简介</div>
+            <div class="about-content">
+                <p>这个网站主要是使用html+css+js前端三件套做成，没有配套的后端，也没有使用vue等框架搭建，只是个纯前端的静态网页架子。这个网页主要是个人的博客，记录生活，写一些技术博客，日常生活日常学习的记录等等。</p>
+                <p>后续也是想将这个网站真正完善好，将这个网站先使用vue改写实现，然后写个配套的springboot后端代码，让这个网站真正跑起来，后续会也顺便对界面做些优化和改造之类。</p>
+            </div>
+        </div>
     </div>
     
-    <div class="hi-content">
-        
-        <p style="background-image: url('./img/avenue-815297_1280.jpg');">"千里之行，始于足下。" - 老子</p>
-        
-        <p style="background-image: url('./img/pexels-pandepoul-6590186.jpg');">在逆风里把握方向，做暴风雨中的海燕，做不改颜色的孤星。 - 余光中</p>
-
-        <p style="background-image: url('./img/pexels-creationsbyfaik-1025469.jpg');">夜之黑暗是一只口袋，迸出黎明的金光。 —— 泰戈尔</p>
-
-        <p style="background-image: url('./img/pexels-pixabay-33545.jpg');">"Life isn't about finding yourself. Life is about creating yourself." - George Bernard Shaw</p>
-
-        <p style="background-image: url('./img/pexels-pixabay-206359.jpg');">"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</p>
-    </div>
-
-    <div class="hi-content">
-        <img src="./img/avenue-815297_1280.jpg" alt="Image">
-        <p>"千里之行，始于足下。" - 老子</p>
-        <img src="./img/pexels-pandepoul-6590186.jpg" alt="Image">
-        <p>在逆风里把握方向，做暴风雨中的海燕，做不改颜色的孤星。 - 余光中</p>
-        <img src="./img/pexels-creationsbyfaik-1025469.jpg" alt="Image">
-        <p>夜之黑暗是一只口袋，迸出黎明的金光。 —— 泰戈尔</p>
-        <img src="./img/pexels-pixabay-33545.jpg" alt="Image">
-        <p>"Life isn't about finding yourself. Life is about creating yourself." - George Bernard Shaw</p>
-        <img src="./img/pexels-pixabay-206359.jpg" alt="Image">
-        <p>"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</p>
-    </div>
-
-    <div class="introduce">
-        <p class="end-line">幸福的人生是相似的，不幸的人生却各有各的不同。——托尔斯泰</p>
-
-
-    </div>
 
 
     <footer>
         <p>&copy; 2024 LJJ 的小站. 版权所有。</p>
     </footer>
-    <script src="./js/mouseClick.js"></script>
-    <script src="./js/sakura.js"></script>
+    <script src="../js/mouseClick.js"></script>
+    <script src="../js/sakura.js"></script>
 </body>
 
 </html>
