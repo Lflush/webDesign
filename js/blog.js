@@ -1,33 +1,62 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // JavaScript代码实现模态框点击效果
+    // Modal functionality
+    const modal = document.getElementById('blogModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalImage = document.getElementById('modalImage');
+    const modalDescription = document.getElementById('modalDescription');
+    const closeBtn = document.querySelector('.modal .close');
+
+    // Add click event to all blog boxes
     document.querySelectorAll('.blog-box').forEach(box => {
         box.addEventListener('click', function () {
-            document.getElementById('modalTitle').innerText = this.querySelector('.blog-title p').innerText;
-            document.getElementById('modalImage').src = this.querySelector('.blog-cover img').src;
-            document.getElementById('modalImage').alt = this.querySelector('.blog-cover img').alt;
-            document.getElementById('modalImage').title = this.querySelector('.blog-title p').innerText;
-            document.getElementById('modalDescription').innerText = this.querySelector('.blog-description p').innerText;
-            document.getElementById('blogModal').style.display = 'block';
+            const titleText = this.querySelector('.blog-title p')?.innerText || '';
+            const imageSrc = this.querySelector('.blog-cover img')?.src || '';
+            const imageAlt = this.querySelector('.blog-cover img')?.alt || '';
+            const descriptionText = this.querySelector('.blog-description p')?.innerText || '';
+
+            modalTitle.textContent = titleText;
+            modalImage.src = imageSrc;
+            modalImage.alt = imageAlt;
+            modalImage.title = titleText;
+            modalDescription.textContent = descriptionText;
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
         });
     });
 
-    document.querySelector('.modal .close').addEventListener('click', function () {
-        document.getElementById('blogModal').style.display = 'none';
-    });
+    // Close modal when clicking close button
+    closeBtn.addEventListener('click', closeModal);
 
+    // Close modal when clicking outside
     window.addEventListener('click', function (event) {
-        if (event.target == document.getElementById('blogModal')) {
-            document.getElementById('blogModal').style.display = 'none';
+        if (event.target === modal) {
+            closeModal();
         }
     });
 
-    // JavaScript代码实现滚动淡入效果
+    // Close modal on escape key
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && modal.style.display === 'block') {
+            closeModal();
+        }
+    });
+
+    function closeModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    // Scroll animation for blog boxes
     const blogBoxes = document.querySelectorAll('.blog-box');
+    let ticking = false;
 
     const isVisible = (elem) => {
         const rect = elem.getBoundingClientRect();
         const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-        return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+        const elemTop = rect.top;
+        const elemBottom = rect.bottom;
+        
+        return elemTop < viewHeight - 100 && elemBottom > 0;
     };
 
     const scrollHandler = () => {
@@ -36,8 +65,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 box.classList.add('visible');
             }
         });
+        ticking = false;
     };
 
-    window.addEventListener('scroll', scrollHandler);
-    scrollHandler(); // 初始化页面时也运行一次
+    window.addEventListener('scroll', function () {
+        if (!ticking) {
+            window.requestAnimationFrame(scrollHandler);
+            ticking = true;
+        }
+    });
+
+    // Initial check for visible elements
+    setTimeout(scrollHandler, 100);
 });
